@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icons8-math-100.png">
+    <title>Math Game</title>
+</head>
+<body>
+    <div class="page0 pages">
+        <h1>ENTER <br> YOUR NAME</h1>
+        <input type="text" id="name">
+        <button class="next" onclick="clPage0()">NEXT</button>
+    </div>
+    <div class="page1 pages">
+        <div class="title">
+            <div class="name">MATH <br> GAME</div>
+            <div class="page-name">Choose Mode:</div>
+        </div>
+        <div class="btns">
+            <button onclick="clpage1(); add()">Addition +</button>
+            <button onclick="clpage1(); sub()">Subtract -</button>
+            <button onclick="clpage1(); mul()">Multiply X</button>
+            <button onclick="clpage1(); div()">Division /</button>
+            <button style="font-weight: bolder;" onclick="clpage1(); mix()">MIXED</button>
+        </div>
+    </div>
+    <div class="page2 pages">
+        <div class="title">
+            <div class="name">MATH GAME</div>
+            <div class="page-name">Choose Diffculty:</div>
+        </div>
+        <div class="btns">
+            <button onclick="clpage2(); es()">Easy</button>
+            <button onclick="clpage2(); no()">Normal</button>
+            <button onclick="clpage2(); hd()">Hard</button>
+            <button onclick="clpage2(); ex()">EXTREME</button>
+        </div>
+    </div>
+    <div class="page3 pages">
+        <div class="title">
+            <div class="info">
+                <h1 class="score">Score: </h1>
+            </div>
+        </div>
+            <br>
+            <div class="display">
+                <h1 class="prob"></h1>
+                <hr>
+                <h1 class="massage">Start</h1>
+            </div>
+        <div class="btns">
+            <button class="op1"></button>
+            <button class="op2"></button>
+            <button class="op3"></button>
+            <button class="op4"></button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
